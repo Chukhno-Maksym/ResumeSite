@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #121326;
+}
+
+.hero-section {
+  display: flex;
+  gap: 10px;
+  background: #121326;
+}
+
+.my-photo {
+  max-width: 170px;
+  max-height: 180px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.name {
+  flex-grow: 1;
+  padding: 15px 10px;
+}
+
+.hero-text {
+  text-align: left;
+  margin: 0;
+  font-size: 128px;
+  color: white;
+}
+
+.wholepage {
+  display: flex;
+  gap: 20px;
+}
+
+.text {
+  font-size: 26px;
+  margin: 0;
+  padding: 10px 10px;
+}
+
+/* Side navigation menu */
+
+.aside-nav {
+  width: 100%;
+  max-width: 310px;
+  border-right: 5px solid #121326;
+  background-color: lightgray;
+}
+
+.aside-links {
+  margin: 0 auto;
+  padding: 16px 20px;
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 36px;
+  color: #121326;
+}
+
+/* Main content */
+
+/* About me */
+
+.maintext {
+  display: flex;
+  margin: 0px 10px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 64px;
+  margin: 0px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+/* About me section */
+
+/* Education section */
+
+.education-list {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.education-grade {
+  display: flex;
+  gap: 10px;
+  max-width: 620px;
+}
+
+.education-certificate {
+  padding-top: 40px;
+}
+
+/* Expierance section */
+/* Skills section */
+/* Contacts section */
