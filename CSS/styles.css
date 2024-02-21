@@ -38,7 +38,7 @@ body {
 }
 
 .text {
-  font-size: 26px;
+  font-size: 24px;
   margin: 0;
   padding: 10px 10px;
 }
@@ -60,7 +60,7 @@ body {
 
 .link {
   text-decoration: none;
-  font-size: 36px;
+  font-size: 28px;
   color: #121326;
 }
 
@@ -92,16 +92,36 @@ body {
   justify-content: space-evenly;
 }
 
+.text-white {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 10px;
+  /* color: white; */
+}
+
 .education-grade {
   display: flex;
-  gap: 10px;
+  gap: 5px;
   max-width: 620px;
+  border: 2px solid #121326;
+  border-radius: 25px;
+  /* background-color: #121326; */
 }
 
 .education-certificate {
+  padding: 0px 5px;
   padding-top: 40px;
 }
 
-/* Expierance section */
+/* Experiance section */
+
+.experiance-textbox {
+  max-width: 920px;
+  margin: 10px 0px;
+  border: 2px solid #121326;
+  border-radius: 25px;
+  /* background-color: #121326; */
+}
+
 /* Skills section */
 /* Contacts section */
