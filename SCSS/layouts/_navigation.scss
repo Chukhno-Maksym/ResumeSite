@@ -1,0 +1,17 @@
+.navigation {
+  width: 100%;
+  max-width: 310px;
+  border-right: 5px solid #121326;
+
+  &__aside-links {
+    margin: 0 auto;
+    padding: 16px 20px;
+    list-style-type: none;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 28px;
+    color: #121326;
+  }
+}

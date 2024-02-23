@@ -4,29 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
   </head>
   <body>
     <header>
       <div class="hero-section">
-        <img class="my-photo" src="./Images/myphoto.jpg" alt="" />
-        <div class="name">
-          <h1 class="hero-text">Максим Чухно</h1>
+        <img class="hero-section__my-photo" src="./Images/myphoto.jpg" alt="" />
+        <div class="hero-section__name">
+          <h1 class="hero-section__hero-text">Максим Чухно</h1>
         </div>
       </div>
     </header>
     <main>
       <div class="wholepage">
-        <div class="aside-nav">
-          <ul class="aside-links">
-            <li><a href="#" class="link">Про мене</a></li>
-            <li><a href="#" class="link">Освіта</a></li>
-            <li><a href="#" class="link">Досвід роботи</a></li>
-            <li><a href="#" class="link">Навички та скіли</a></li>
-            <li><a href="#" class="link">Контакти</a></li>
-          </ul>
+        <div class="navigation">
+          <nav>
+            <ul class="navigation__aside-links">
+              <li><a href="#" class="navigation__link">Про мене</a></li>
+              <li><a href="#" class="navigation__link">Освіта</a></li>
+              <li><a href="#" class="navigation__link">Досвід роботи</a></li>
+              <li><a href="#" class="navigation__link">Навички та скіли</a></li>
+              <li><a href="#" class="navigation__link">Контакти</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="maintext">
+        <div class="content">
           <section class="about-me">
             <h2 class="section-title">Про мене</h2>
             <div class="text">
@@ -43,15 +45,15 @@
               </p>
             </div>
           </section>
-          <section class="education">
+          <section class="education-section">
             <h2 class="section-title">Освіта</h2>
-            <div class="education-list">
-              <div class="education-grade">
-                <div class="education-certificate">
+            <div class="education-section__list">
+              <div class="education-section__grade">
+                <div class="education-section__certificate">
                   <img src="./Images/certificate-blue.png" alt="" />
                 </div>
-                <div class="education-text">
-                  <div class="text-white">
+                <div class="education-section__text">
+                  <div class="text">
                     <p>
                       Київська державна академія водного транспорту імені
                       гетьмана Петра Конашевича-Сагайдачного, Київ.
@@ -61,12 +63,12 @@
                   </div>
                 </div>
               </div>
-              <div class="education-grade">
-                <div class="education-certificate">
+              <div class="education-section__grade">
+                <div class="education-section__certificate">
                   <img src="./Images/certificate_red.png" alt="" />
                 </div>
-                <div class="education-text">
-                  <div class="text-white">
+                <div class="education-section__text">
+                  <div class="text">
                     <p>
                       Державний університет інфраструктури та технологій, Київ.
                     </p>
@@ -75,13 +77,24 @@
                   </div>
                 </div>
               </div>
+              <div class="education-section__grade">
+                <div class="education-section__certificate">
+                  <img src="./Images/certificate-blue.png" alt="" />
+                </div>
+                <div class="education-section__text">
+                  <div class="text">
+                    <p>Web розробка - Genius Space. HTML/CSS спеціаліст.</p>
+                    <p>ГРУДЕНЬ 2023 - СІЧЕНЬ</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </section>
-          <section class="experiance">
+          <section class="experiance-section">
             <h2 class="section-title">Досвід роботи</h2>
-            <div class="experiance-flexbox">
-              <div class="experiance-textbox">
-                <div class="text-white">
+            <div class="experiance-section__experiance-list">
+              <div class="experiance-section__experiance">
+                <div class="text">
                   <p>
                     МЕТРО Україна — Менеджер з управління досвідом клієнтів
                     СЕРПЕНЬ 2023
@@ -105,8 +118,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="experiance-textbox">
-                <div class="text-white">
+              <div class="experiance-section__experiance">
+                <div class="text">
                   <p>МЕТРО Україна — Керівник відділу Non Food</p>
                   <p>ЛИСТОПАД 2022 - СЕРПЕНЬ 2023</p>
                   <ul>
@@ -121,8 +134,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="experiance-textbox">
-                <div class="text-white">
+              <div class="experiance-section__experiance">
+                <div class="text">
                   <p>
                     МЕТРО Україна — Заступник керівника відділу ВЕРЕСЕНЬ 2019 -
                     ЛИСТОПАД 2022
@@ -144,8 +157,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="experiance-textbox">
-                <div class="text-white">
+              <div class="experiance-section__experiance">
+                <div class="text">
                   <p>
                     МЕТРО Україна — Стажер Metro Store Academy БЕРЕЗЕНЬ 2019 -
                     ВЕРЕСЕНЬ 2019
@@ -163,8 +176,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="experiance-textbox">
-                <div class="text-white">
+              <div class="experiance-section__experiance">
+                <div class="text">
                   <p>
                     МЕТРО Україна — Співробітник торговельного залу ЖОВТЕНЬ 2017
                     - ЧЕРВЕНЬ 2018
@@ -179,10 +192,10 @@
           </section>
           <section class="skills-section">
             <h2 class="section-title">Навички та скіли</h2>
-            <div class="skill-list">
-              <div class="skill">
+            <div class="skills-section__list">
+              <div class="skills-section__skill">
                 <h3>Hard skills</h3>
-                <ul class="list-type">
+                <ul class="skills-section__list-type">
                   <li>Punctual</li>
                   <li>2</li>
                   <li>2</li>
@@ -190,34 +203,33 @@
                   <li>2</li>
                 </ul>
               </div>
-              <div class="skill">
+              <div class="skills-section__skill">
                 <h3>Soft skills</h3>
-                <ul class="list-type">
+                <ul class="skills-section__list-type">
                   <li>Пунктуальний</li>
                   <li>Стресостійкий</li>
                   <li>Відповідальний</li>
-                  <li>2</li>
+                  <li>Ініціативний</li>
+                  <li>Комунікативний</li>
+                  <li>Швидко вчусь</li>
+                  <li>Працюю в команді</li>
+                </ul>
+              </div>
+              <div class="skills-section__skill">
+                <h3>Комп'ютерна грамотність</h3>
+                <ul class="skills-section__list-type">
+                  <li>Знання ms office (Word, Excel, PowerPoint, Outlook)</li>
+                  <li>Знання HTML</li>
+                  <li>Занння CSS</li>
+                  <li>Sass</li>
                   <li>2</li>
                 </ul>
               </div>
-              <div class="skill">
-                <h3>Computer literacy</h3>
-                <ul class="list-type">
-                  <li>1</li>
-                  <li>2</li>
-                  <li>2</li>
-                  <li>2</li>
-                  <li>2</li>
-                </ul>
-              </div>
-              <div class="skill">
+              <div class="skills-section__skill">
                 <h3>Language skills</h3>
-                <ul class="list-type">
-                  <li>1</li>
-                  <li>2</li>
-                  <li>2</li>
-                  <li>2</li>
-                  <li>2</li>
+                <ul class="skills-section__list-type">
+                  <li>Українська - рідна.</li>
+                  <li>Англійська - Середній рівень (Intermediate)</li>
                 </ul>
               </div>
             </div>

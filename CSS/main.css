@@ -1,0 +1,114 @@
+.education-section__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.education-section__grade {
+  display: flex;
+  gap: 5px;
+  width: 380px;
+  border: 2px solid #121326;
+  border-radius: 25px;
+}
+.education-section__certificate {
+  padding: 0px 5px;
+  padding-top: 34px;
+}
+
+.experiance-section__experiance-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+  margin: 0px;
+}
+.experiance-section__experiance {
+  width: 380px;
+  border: 2px solid #121326;
+  border-radius: 25px;
+}
+
+.skills-section__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills-section__skill {
+  width: 240px;
+  text-align: center;
+  border: 2px solid #121326;
+  border-radius: 25px;
+}
+.skills-section__list-type {
+  list-style-type: none;
+  padding: 0px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  color: #121326;
+}
+
+.wholepage {
+  display: flex;
+}
+
+.section-title {
+  font-size: 64px;
+  margin: 0px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.content {
+  margin: 0px 5px;
+}
+
+.hero-section {
+  display: flex;
+  gap: 10px;
+  background: #121326;
+}
+.hero-section__my-photo {
+  max-width: 170px;
+  max-height: 180px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.hero-section__name {
+  flex-grow: 1;
+  padding: 15px 10px;
+}
+.hero-section__hero-text {
+  text-align: left;
+  margin: 0;
+  font-size: 128px;
+  color: white;
+}
+
+.navigation {
+  width: 100%;
+  max-width: 310px;
+  border-right: 5px solid #121326;
+}
+.navigation__aside-links {
+  margin: 0 auto;
+  padding: 16px 20px;
+  list-style-type: none;
+}
+.navigation__link {
+  text-decoration: none;
+  font-size: 28px;
+  color: #121326;
+}/*# sourceMappingURL=main.css.map */

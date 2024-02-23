@@ -1,0 +1,20 @@
+.education-section{
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__grade {
+        display: flex;
+        gap: 5px;
+        width: 380px;
+        border: 2px solid #121326;
+        border-radius: 25px;
+    }
+
+    &__certificate {
+        padding: 0px 5px;
+        padding-top: 34px;
+    }
+}

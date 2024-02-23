@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    color: #121326;
+}
+
+.wholepage {
+    display: flex;
+}
+
+.section-title {
+    font-size: 64px;
+    margin: 0px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.text {
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 10px;
+}
+
+.content {
+    margin: 0px 5px;
+}
