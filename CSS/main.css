@@ -15,12 +15,28 @@
   padding-top: 34px;
 }
 
+.experiance-section__slider {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
 .experiance-section__list {
   padding: 0px;
+  margin: 0px;
 }
 .experiance-section__positions {
   border: 2px solid black;
   border-radius: 25px;
+}
+.experiance-section__button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+.experiance-section__button.next {
+  transform: rotate(180deg);
 }
 
 .skills-section__list {

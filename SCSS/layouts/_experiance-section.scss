@@ -1,9 +1,26 @@
 .experiance-section {
+  &__slider {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+  }
   &__list {
     padding: 0px;
+    margin: 0px;
   }
   &__positions {
     border: 2px solid black;
     border-radius: 25px;
+  }
+  &__button {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+  }
+
+  &__button.next {
+    transform: rotate(180deg);
   }
 }
