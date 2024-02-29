@@ -15,16 +15,11 @@
   padding-top: 34px;
 }
 
-.experiance-section__experiance-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  max-width: 100%;
-  margin: 0px;
+.experiance-section__list {
+  padding: 0px;
 }
-.experiance-section__experiance {
-  width: 380px;
-  border: 2px solid #121326;
+.experiance-section__positions {
+  border: 2px solid black;
   border-radius: 25px;
 }
 
@@ -58,6 +53,10 @@ body {
   display: flex;
 }
 
+.content {
+  overflow: hidden;
+}
+
 .section-title {
   font-size: 64px;
   margin: 0px;
@@ -73,6 +72,10 @@ body {
 
 .content {
   margin: 0px 5px;
+}
+
+.article {
+  width: 380px;
 }
 
 .hero-section {
