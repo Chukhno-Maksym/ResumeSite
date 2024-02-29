@@ -1,4 +1,6 @@
 .navigation {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 310px;
   border-right: 5px solid #121326;
@@ -13,5 +15,13 @@
     text-decoration: none;
     font-size: 28px;
     color: #121326;
+  }
+  &__download-button {
+    border: none;
+    border-radius: 15px;
+    width: 164px;
+    height: 48px;
+    cursor: pointer;
+    align-self: center;
   }
 }

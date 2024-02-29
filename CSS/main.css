@@ -2,17 +2,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
-.education-section__grade {
+.education-section__institution {
   display: flex;
-  gap: 5px;
-  width: 380px;
+  width: 520px;
+  padding: 5px;
   border: 2px solid #121326;
   border-radius: 25px;
 }
-.education-section__certificate {
-  padding: 0px 5px;
-  padding-top: 34px;
+.education-section__grade {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .experiance-section__slider {
@@ -26,6 +31,7 @@
   margin: 0px;
 }
 .experiance-section__positions {
+  padding: 5px 5px;
   border: 2px solid black;
   border-radius: 25px;
 }
@@ -60,6 +66,17 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 5px;
+}
+
 body {
   margin: 0px;
   color: #121326;
@@ -90,18 +107,16 @@ body {
   margin: 0px 5px;
 }
 
-.article {
-  width: 380px;
-}
-
 .hero-section {
   display: flex;
   gap: 10px;
+  padding-left: 10px;
+  align-items: center;
   background: #121326;
 }
 .hero-section__my-photo {
-  max-width: 170px;
-  max-height: 180px;
+  max-width: 120px;
+  max-height: 130px;
   border-radius: 50%;
   padding: 10px;
 }
@@ -112,11 +127,13 @@ body {
 .hero-section__hero-text {
   text-align: left;
   margin: 0;
-  font-size: 128px;
+  font-size: 64px;
   color: white;
 }
 
 .navigation {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 310px;
   border-right: 5px solid #121326;
@@ -130,4 +147,12 @@ body {
   text-decoration: none;
   font-size: 28px;
   color: #121326;
+}
+.navigation__download-button {
+  border: none;
+  border-radius: 15px;
+  width: 164px;
+  height: 48px;
+  cursor: pointer;
+  align-self: center;
 }/*# sourceMappingURL=main.css.map */
