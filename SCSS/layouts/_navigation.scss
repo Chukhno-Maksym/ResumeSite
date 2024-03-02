@@ -1,18 +1,23 @@
 .navigation {
-  width: 100%;
-  max-width: 310px;
-  border-right: 5px solid #121326;
+  display: none;
 
-  &__stickynav {
-    position: sticky;
-    display: flex;
-    flex-direction: column;
-    top: 0;
-  }
+  @media screen and (min-width: 426px) {
+    display: block;
+    width: 100%;
+    max-width: 310px;
+    border-right: 5px solid #121326;
 
-  &__aside-links {
-    margin: 0 auto;
-    padding: 16px 20px;
-    list-style-type: none;
+    &__stickynav {
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+    }
+
+    &__aside-links {
+      margin: 0 auto;
+      padding: 16px 20px;
+      list-style-type: none;
+    }
   }
 }
