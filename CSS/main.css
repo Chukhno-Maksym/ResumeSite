@@ -107,6 +107,21 @@ body {
   margin: 0px 5px;
 }
 
+.button {
+  display: block;
+  border: none;
+  border-radius: 15px;
+  width: 164px;
+  height: 48px;
+  cursor: pointer;
+  align-self: center;
+}
+.button:hover {
+  color: white;
+  background-color: #121326;
+  transition: 0.3s;
+}
+
 .hero-section {
   display: flex;
   gap: 10px;
@@ -131,28 +146,32 @@ body {
   color: white;
 }
 
+.link {
+  padding: 5px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #121326;
+  border-radius: 25px;
+}
+.link:hover {
+  color: white;
+  background-color: #121326;
+  transition: 0.3s;
+}
+
 .navigation {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   max-width: 310px;
   border-right: 5px solid #121326;
+}
+.navigation__stickynav {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  top: 0;
 }
 .navigation__aside-links {
   margin: 0 auto;
   padding: 16px 20px;
   list-style-type: none;
-}
-.navigation__link {
-  text-decoration: none;
-  font-size: 28px;
-  color: #121326;
-}
-.navigation__download-button {
-  border: none;
-  border-radius: 15px;
-  width: 164px;
-  height: 48px;
-  cursor: pointer;
-  align-self: center;
 }/*# sourceMappingURL=main.css.map */

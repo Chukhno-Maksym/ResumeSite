@@ -22,21 +22,33 @@
     <main>
       <div class="wholepage">
         <div class="navigation">
-          <nav>
-            <ul class="navigation__aside-links">
-              <li><a href="#" class="navigation__link">Про мене</a></li>
-              <li><a href="#" class="navigation__link">Освіта</a></li>
-              <li><a href="#" class="navigation__link">Досвід роботи</a></li>
-              <li><a href="#" class="navigation__link">Навички та скіли</a></li>
-              <li><a href="#" class="navigation__link">Контакти</a></li>
-            </ul>
-          </nav>
-          <button class="navigation__download-button" type="button">
-            Завантажити резюме
-          </button>
+          <div class="navigation__stickynav">
+            <nav>
+              <ul class="navigation__aside-links">
+                <li>
+                  <a href="#aboutme-section" class="link">Про мене</a>
+                </li>
+                <li>
+                  <a href="#ducation-section" class="link">Освіта</a>
+                </li>
+                <li>
+                  <a href="#experiance-section" class="link">Досвід роботи</a>
+                </li>
+                <li>
+                  <a href="#skills-section" class="link">Навички та скіли</a>
+                </li>
+                <li>
+                  <a href="#contacts" class="link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="navigation__download-button button" type="button">
+              Завантажити резюме
+            </button>
+          </div>
         </div>
         <div class="content">
-          <section class="about-me">
+          <section class="aboutme-section" id="aboutme-section">
             <h2 class="section-title">Про мене</h2>
             <div class="text">
               <p>Вітаю!</p>
@@ -52,7 +64,7 @@
               </p>
             </div>
           </section>
-          <section class="education-section">
+          <section class="education-section" id="ducation-section">
             <h2 class="section-title">Освіта</h2>
             <ul class="education-section__list">
               <li class="education-section__institution">
@@ -80,6 +92,9 @@
                   </div>
                 </article>
               </li>
+            </ul>
+            <h3 class="section-title">Додаткова освіта</h3>
+            <ul class="education-section__list">
               <li class="education-section__institution">
                 <article class="education-section__grade">
                   <img src="./Images/certificate-blue.png" alt="" />
@@ -91,7 +106,7 @@
               </li>
             </ul>
           </section>
-          <section class="experiance-section">
+          <section class="experiance-section" id="experiance-section">
             <h2 class="section-title">Досвід роботи</h2>
             <div class="experiance-section__slider">
               <button
@@ -218,7 +233,7 @@
               </button>
             </div>
           </section>
-          <section class="skills-section">
+          <section class="skills-section" id="skills-section">
             <h2 class="section-title">Навички та скіли</h2>
             <div class="skills-section__list">
               <div class="skills-section__skill">
@@ -262,7 +277,7 @@
               </div>
             </div>
           </section>
-          <section class="contacts">
+          <section class="contacts" id="contacts">
             <h2 class="section-title">Контакти</h2>
           </section>
         </div>

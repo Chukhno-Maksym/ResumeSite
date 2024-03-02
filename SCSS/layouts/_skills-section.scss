@@ -1,21 +1,20 @@
-.skills-section{
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
+.skills-section {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-    &__skill {
-        width: 240px;
-        text-align: center;
-        border: 2px solid #121326;
-        border-radius: 25px;
-    }
+  &__skill {
+    width: 240px;
+    text-align: center;
+    border: 2px solid #121326;
+    border-radius: 25px;
+  }
 
-    &__list-type {
-        list-style-type: none;
-        padding: 0px;
-    }
+  &__list-type {
+    list-style-type: none;
+    padding: 0px;
+  }
 }
-
