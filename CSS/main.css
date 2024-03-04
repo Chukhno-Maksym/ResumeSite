@@ -1,3 +1,37 @@
+.contacts-section__social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.contacts-section__social-icon {
+  fill: #2aabee;
+}
+.contacts-section__adress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  font-size: 18px;
+}
+.contacts-section__adress {
+  text-decoration: none;
+  color: #121326;
+}
+@media screen and (min-width: 426px) {
+  .contacts-section__adress-article {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contacts-section__social {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .education-section__list {
   display: flex;
   flex-direction: column;
@@ -149,9 +183,10 @@ body {
   .nav-button {
     display: block;
     border: none;
-    border-radius: 15px;
-    width: 164px;
-    height: 48px;
+    border-radius: 25px;
+    width: 280px;
+    height: 60px;
+    font-size: 26px;
     cursor: pointer;
     margin: 0 auto;
   }
@@ -170,8 +205,9 @@ body {
   display: block;
   border: none;
   border-radius: 15px;
-  width: 164px;
-  height: 48px;
+  width: 280px;
+  height: 60px;
+  font-size: 26px;
   cursor: pointer;
   margin: 0 auto;
 }
@@ -292,7 +328,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .link {
-    font-size: 26px;
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 1440px) {

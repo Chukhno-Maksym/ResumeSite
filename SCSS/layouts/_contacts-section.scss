@@ -1,0 +1,40 @@
+.contacts-section {
+  &__social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  &__social-icon {
+    fill: #2aabee;
+  }
+
+  &__adress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    font-size: 18px;
+  }
+
+  &__adress {
+    text-decoration: none;
+    color: #121326;
+  }
+
+  @media screen and (min-width: 426px) {
+    &__adress-article {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    &__social {
+      flex-direction: column;
+      gap: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
