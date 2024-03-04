@@ -256,7 +256,7 @@ body {
   }
   .navigation__stickynav {
     padding: 5px 10px;
-    background-color: steelblue;
+    background-color: #121326;
   }
   .navigation__aside-links {
     margin: 0;
@@ -328,6 +328,7 @@ body {
   .nav-button__button-deco {
     text-decoration: none;
     color: inherit;
+    font-family: "Times New Roman", sans-serif;
   }
   .nav-button:hover {
     color: white;
@@ -354,6 +355,7 @@ body {
 .aboutme-button__button-deco {
   text-decoration: none;
   color: inherit;
+  font-family: "Times New Roman", sans-serif;
 }
 @media screen and (min-width: 1024px) {
   .aboutme-button {
@@ -365,17 +367,19 @@ body {
   font-size: 18px;
   padding: 5px;
   text-decoration: none;
-  color: #121326;
   border-radius: 25px;
+  color: white;
 }
 @media screen and (min-width: 1024px) {
   .link {
     font-size: 30px;
+    color: #121326;
   }
 }
 @media screen and (min-width: 1440px) {
   .link {
     font-size: 34px;
+    color: #121326;
   }
 }
 .link:hover {

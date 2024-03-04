@@ -14,6 +14,7 @@
     &__button-deco {
       text-decoration: none;
       color: inherit;
+      font-family: "Times New Roman", sans-serif;
     }
 
     &:hover {
@@ -43,6 +44,7 @@
   &__button-deco {
     text-decoration: none;
     color: inherit;
+    font-family: "Times New Roman", sans-serif;
   }
 
   @media screen and (min-width: 1024px) {
