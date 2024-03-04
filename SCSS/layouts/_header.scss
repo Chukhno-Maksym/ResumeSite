@@ -1,6 +1,14 @@
 .hero-section {
-  display: block;
   background: #121326;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+
+  &__burger {
+    background-color: transparent;
+    border: 0;
+    fill: white;
+  }
 
   @media screen and (min-width: 426px) {
     display: flex;

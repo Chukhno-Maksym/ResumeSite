@@ -17,6 +17,35 @@
         <div class="hero-section__name">
           <h1 class="hero-section__hero-text">Максим Чухно</h1>
         </div>
+        <button class="hero-section__burger menu-btn-open" type="button">
+          <svg width="32" height="32">
+            <use href="./Images/icons.svg#mobile-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            <svg width="32" height="32">
+              <use href="./Images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__links">
+            <li>
+              <a href="#aboutme-section" class="link">Про мене</a>
+            </li>
+            <li>
+              <a href="#ducation-section" class="link">Освіта</a>
+            </li>
+            <li>
+              <a href="#experiance-section" class="link">Досвід роботи</a>
+            </li>
+            <li>
+              <a href="#skills-section" class="link">Навички та скіли</a>
+            </li>
+            <li>
+              <a href="#contacts" class="link">Контакти</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -116,7 +145,7 @@
                 type="button"
               >
                 <svg width="32" height="32">
-                  <use href="./Images/arrow-left.svg#icon-arrow-left"></use>
+                  <use href="./Images/icons.svg#icon-arrow-left"></use>
                 </svg>
               </button>
               <div class="swiper">
@@ -230,7 +259,7 @@
                 type="button"
               >
                 <svg width="32" height="32">
-                  <use href="./Images/arrow-left.svg#icon-arrow-left"></use>
+                  <use href="./Images/icons.svg#icon-arrow-left"></use>
                 </svg>
               </button>
             </div>
@@ -289,5 +318,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./JS/slider.js"></script>
+    <script src="./JS/mobile-menu.js"></script>
   </body>
 </html>
