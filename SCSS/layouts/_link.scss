@@ -6,7 +6,11 @@
   border-radius: 25px;
 
   @media screen and (min-width: 1024px) {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 34px;
   }
 
   &:hover {

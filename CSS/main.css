@@ -1,8 +1,3 @@
-.aboutme-section__resume-button {
-  display: flex;
-  justify-content: center;
-}
-
 .education-section__list {
   display: flex;
   flex-direction: column;
@@ -36,7 +31,7 @@
     justify-content: space-evenly;
   }
   .education-section__institution {
-    height: 150px;
+    height: 200px;
   }
 }
 
@@ -82,15 +77,19 @@
   gap: 10px;
 }
 .skills-section__skill {
-  width: 240px;
-  text-align: center;
+  width: 95%;
+  max-width: 360px;
   border: 2px solid #121326;
   border-radius: 25px;
   box-shadow: 5px 5px #121326;
 }
 .skills-section__list-type {
-  list-style-type: none;
-  padding: 0px;
+  margin: 0;
+  padding: 10px 30px;
+}
+.skills-section__title {
+  text-align: center;
+  padding: 10px 0px;
 }
 
 * {
@@ -154,17 +153,16 @@ body {
     width: 164px;
     height: 48px;
     cursor: pointer;
+    margin: 0 auto;
+  }
+  .nav-button__button-deco {
+    text-decoration: none;
+    color: inherit;
   }
   .nav-button:hover {
     color: white;
     background-color: #121326;
     transition: 0.3s;
-  }
-  .nav-button__button-centered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
   }
 }
 
@@ -175,14 +173,16 @@ body {
   width: 164px;
   height: 48px;
   cursor: pointer;
+  margin: 0 auto;
 }
 .aboutme-button:hover {
   color: white;
   background-color: #121326;
   transition: 0.3s;
 }
-.aboutme-button__button-centered {
+.aboutme-button__button-deco {
   text-decoration: none;
+  color: inherit;
 }
 @media screen and (min-width: 1024px) {
   .aboutme-button {
@@ -292,7 +292,12 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .link {
-    font-size: 28px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .link {
+    font-size: 34px;
   }
 }
 .link:hover {

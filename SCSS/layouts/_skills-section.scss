@@ -7,15 +7,20 @@
   }
 
   &__skill {
-    width: 240px;
-    text-align: center;
+    width: 95%;
+    max-width: 360px;
     border: 2px solid #121326;
     border-radius: 25px;
     box-shadow: 5px 5px #121326;
   }
 
   &__list-type {
-    list-style-type: none;
-    padding: 0px;
+    margin: 0;
+    padding: 10px 30px;
+  }
+
+  &__title {
+    text-align: center;
+    padding: 10px 0px;
   }
 }

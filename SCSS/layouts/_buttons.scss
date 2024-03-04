@@ -8,18 +8,17 @@
     width: 164px;
     height: 48px;
     cursor: pointer;
+    margin: 0 auto;
+
+    &__button-deco {
+      text-decoration: none;
+      color: inherit;
+    }
 
     &:hover {
       color: white;
       background-color: #121326;
       transition: 0.3s;
-    }
-
-    &__button-centered {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
     }
   }
 }
@@ -31,6 +30,7 @@
   width: 164px;
   height: 48px;
   cursor: pointer;
+  margin: 0 auto;
 
   &:hover {
     color: white;
@@ -38,8 +38,9 @@
     transition: 0.3s;
   }
 
-  &__button-centered {
+  &__button-deco {
     text-decoration: none;
+    color: inherit;
   }
 
   @media screen and (min-width: 1024px) {
