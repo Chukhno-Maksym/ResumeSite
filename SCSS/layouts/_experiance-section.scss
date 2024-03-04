@@ -14,14 +14,27 @@
     border: 2px solid black;
     border-radius: 25px;
   }
+
   &__button {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    padding: 0px;
+    display: none;
   }
 
   &__button.next {
-    transform: rotate(180deg);
+    display: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    &__button {
+      display: block;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      padding: 0px;
+    }
+
+    &__button.next {
+      display: block;
+      transform: rotate(180deg);
+    }
   }
 }

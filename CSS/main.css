@@ -38,12 +38,6 @@
   .education-section__institution {
     height: 150px;
   }
-  .education-section__grade {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
 }
 
 .experiance-section__slider {
@@ -62,13 +56,23 @@
   border-radius: 25px;
 }
 .experiance-section__button {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  padding: 0px;
+  display: none;
 }
 .experiance-section__button.next {
-  transform: rotate(180deg);
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .experiance-section__button {
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+  }
+  .experiance-section__button.next {
+    display: block;
+    transform: rotate(180deg);
+  }
 }
 
 .skills-section__list {
@@ -221,9 +225,7 @@ body {
   }
   .hero-section__hero-text {
     text-align: left;
-    margin: 0;
     font-size: 48px;
-    color: white;
   }
 }
 @media screen and (min-width: 720px) {
@@ -238,10 +240,7 @@ body {
     padding: 10px;
   }
   .hero-section__hero-text {
-    text-align: left;
-    margin: 0;
     font-size: 64px;
-    color: white;
   }
 }
 
@@ -340,8 +339,24 @@ body {
   }
   .navigation__aside-links {
     display: block;
-    margin: 0 auto;
     padding: 16px 20px;
-    list-style-type: none;
   }
+}
+
+.pagination {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.pagination__button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  background-color: black;
+  border-radius: 50%;
+}
+.pagination__button--active {
+  background-color: black;
 }/*# sourceMappingURL=main.css.map */
