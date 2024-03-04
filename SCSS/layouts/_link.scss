@@ -1,9 +1,13 @@
 .link {
+  font-size: 18px;
   padding: 5px;
   text-decoration: none;
-  font-size: 28px;
   color: #121326;
   border-radius: 25px;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 28px;
+  }
 
   &:hover {
     color: white;

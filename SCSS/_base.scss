@@ -19,7 +19,11 @@ body {
 }
 
 .wholepage {
-  display: flex;
+  display: block;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+  }
 }
 
 .content {
