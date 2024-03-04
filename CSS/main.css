@@ -5,7 +5,9 @@
 
 .education-section__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   padding: 0;
   margin: 0;
@@ -13,16 +15,35 @@
 }
 .education-section__institution {
   display: flex;
-  width: 520px;
+  width: 95%;
+  max-width: 500px;
   padding: 5px;
   border: 2px solid #121326;
   border-radius: 25px;
+  box-shadow: 5px 5px #121326;
 }
 .education-section__grade {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+@media screen and (min-width: 720px) {
+  .education-section__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 99%;
+    justify-content: space-evenly;
+  }
+  .education-section__institution {
+    height: 150px;
+  }
+  .education-section__grade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
 }
 
 .experiance-section__slider {
@@ -52,7 +73,7 @@
 
 .skills-section__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -61,6 +82,7 @@
   text-align: center;
   border: 2px solid #121326;
   border-radius: 25px;
+  box-shadow: 5px 5px #121326;
 }
 .skills-section__list-type {
   list-style-type: none;
@@ -205,6 +227,9 @@ body {
   }
 }
 @media screen and (min-width: 720px) {
+  .hero-section__burger {
+    display: none;
+  }
   .hero-section__my-photo {
     display: block;
     max-width: 120px;

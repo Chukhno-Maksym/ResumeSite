@@ -1,7 +1,7 @@
 .skills-section {
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
   }
@@ -11,6 +11,7 @@
     text-align: center;
     border: 2px solid #121326;
     border-radius: 25px;
+    box-shadow: 5px 5px #121326;
   }
 
   &__list-type {

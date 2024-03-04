@@ -1,7 +1,9 @@
 .education-section {
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     padding: 0;
     margin: 0;
@@ -9,16 +11,35 @@
   }
   &__institution {
     display: flex;
-    width: 520px;
+    width: 95%;
+    max-width: 500px;
     padding: 5px;
     border: 2px solid #121326;
     border-radius: 25px;
+    box-shadow: 5px 5px #121326;
   }
-
   &__grade {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+  }
+
+  @media screen and (min-width: 720px) {
+    &__list {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      width: 99%;
+      justify-content: space-evenly;
+    }
+    &__institution {
+      height: 150px;
+    }
+    &__grade {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+    }
   }
 }
