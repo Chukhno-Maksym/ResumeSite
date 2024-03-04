@@ -1,3 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 5px;
+}
+
+body {
+  margin: 0px;
+  color: #121326;
+}
+
+.wholepage {
+  display: block;
+}
+@media screen and (min-width: 1024px) {
+  .wholepage {
+    display: flex;
+  }
+}
+
+.content {
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 64px;
+  margin: 0px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.text {
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.content {
+  margin: 0px 5px;
+}
+
 .contacts-section__social {
   display: flex;
   justify-content: center;
@@ -104,128 +154,6 @@
   }
 }
 
-.skills-section__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.skills-section__skill {
-  width: 95%;
-  max-width: 360px;
-  border: 2px solid #121326;
-  border-radius: 25px;
-  box-shadow: 5px 5px #121326;
-}
-.skills-section__list-type {
-  margin: 0;
-  padding: 10px 30px;
-}
-.skills-section__title {
-  text-align: center;
-  padding: 10px 0px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 5px;
-}
-
-body {
-  margin: 0px;
-  color: #121326;
-}
-
-.wholepage {
-  display: block;
-}
-@media screen and (min-width: 1024px) {
-  .wholepage {
-    display: flex;
-  }
-}
-
-.content {
-  overflow: hidden;
-}
-
-.section-title {
-  font-size: 64px;
-  margin: 0px;
-  padding: 10px 0px;
-  text-align: center;
-}
-
-.text {
-  font-size: 20px;
-  margin: 0;
-  padding: 10px 10px;
-}
-
-.content {
-  margin: 0px 5px;
-}
-
-.nav-button {
-  display: none;
-}
-@media screen and (min-width: 1024px) {
-  .nav-button {
-    display: block;
-    border: none;
-    border-radius: 25px;
-    width: 280px;
-    height: 60px;
-    font-size: 26px;
-    cursor: pointer;
-    margin: 0 auto;
-  }
-  .nav-button__button-deco {
-    text-decoration: none;
-    color: inherit;
-  }
-  .nav-button:hover {
-    color: white;
-    background-color: #121326;
-    transition: 0.3s;
-  }
-}
-
-.aboutme-button {
-  display: block;
-  border: none;
-  border-radius: 15px;
-  width: 280px;
-  height: 60px;
-  font-size: 26px;
-  cursor: pointer;
-  margin: 0 auto;
-}
-.aboutme-button:hover {
-  color: white;
-  background-color: #121326;
-  transition: 0.3s;
-}
-.aboutme-button__button-deco {
-  text-decoration: none;
-  color: inherit;
-}
-@media screen and (min-width: 1024px) {
-  .aboutme-button {
-    display: none;
-  }
-}
-
 .hero-section {
   background: #121326;
   display: flex;
@@ -319,29 +247,6 @@ body {
   list-style-type: none;
 }
 
-.link {
-  font-size: 18px;
-  padding: 5px;
-  text-decoration: none;
-  color: #121326;
-  border-radius: 25px;
-}
-@media screen and (min-width: 1024px) {
-  .link {
-    font-size: 30px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .link {
-    font-size: 34px;
-  }
-}
-.link:hover {
-  color: white;
-  background-color: #121326;
-  transition: 0.3s;
-}
-
 .navigation {
   display: none;
 }
@@ -382,6 +287,101 @@ body {
     display: block;
     padding: 16px 20px;
   }
+}
+
+.skills-section__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.skills-section__skill {
+  width: 95%;
+  max-width: 360px;
+  border: 2px solid #121326;
+  border-radius: 25px;
+  box-shadow: 5px 5px #121326;
+}
+.skills-section__list-type {
+  margin: 0;
+  padding: 10px 30px;
+}
+.skills-section__title {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.nav-button {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .nav-button {
+    display: block;
+    border: none;
+    border-radius: 25px;
+    width: 280px;
+    height: 60px;
+    font-size: 26px;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  .nav-button__button-deco {
+    text-decoration: none;
+    color: inherit;
+  }
+  .nav-button:hover {
+    color: white;
+    background-color: #121326;
+    transition: 0.3s;
+  }
+}
+
+.aboutme-button {
+  display: block;
+  border: none;
+  border-radius: 15px;
+  width: 280px;
+  height: 60px;
+  font-size: 26px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.aboutme-button:hover {
+  color: white;
+  background-color: #121326;
+  transition: 0.3s;
+}
+.aboutme-button__button-deco {
+  text-decoration: none;
+  color: inherit;
+}
+@media screen and (min-width: 1024px) {
+  .aboutme-button {
+    display: none;
+  }
+}
+
+.link {
+  font-size: 18px;
+  padding: 5px;
+  text-decoration: none;
+  color: #121326;
+  border-radius: 25px;
+}
+@media screen and (min-width: 1024px) {
+  .link {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .link {
+    font-size: 34px;
+  }
+}
+.link:hover {
+  color: white;
+  background-color: #121326;
+  transition: 0.3s;
 }
 
 .pagination {

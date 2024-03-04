@@ -1,13 +1,14 @@
-@import "./layouts/aboutme_section";
+@import "./base";
+
+@import "./layouts/aboutme-section";
 @import "./layouts/contacts-section";
 @import "./layouts/education-section";
 @import "./layouts/experiance-section";
-@import "./layouts/skills-section";
-
-@import "./base";
-@import "./layouts/buttons";
 @import "./layouts/header";
 @import "./layouts/mobile-menu";
-@import "./layouts/link";
 @import "./layouts/navigation";
-@import "./layouts/pagination";
+@import "./layouts/skills-section";
+
+@import "./components/buttons";
+@import "./components/link";
+@import "./components/pagination";
