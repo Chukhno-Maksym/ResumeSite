@@ -1,9 +1,14 @@
 .link {
-  font-size: 18px;
+  font-size: 40px;
   padding: 5px;
   text-decoration: none;
   border-radius: 25px;
-  color: white;
+  color: #121326;
+
+  @media screen and (min-width: 720px) {
+    font-size: 18px;
+    color: white;
+  }
 
   @media screen and (min-width: 1024px) {
     font-size: 30px;
