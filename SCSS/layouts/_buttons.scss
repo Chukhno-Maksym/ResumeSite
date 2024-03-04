@@ -1,4 +1,30 @@
-.button {
+.nav-button {
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: block;
+    border: none;
+    border-radius: 15px;
+    width: 164px;
+    height: 48px;
+    cursor: pointer;
+
+    &:hover {
+      color: white;
+      background-color: #121326;
+      transition: 0.3s;
+    }
+
+    &__button-centered {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+  }
+}
+
+.aboutme-button {
   display: block;
   border: none;
   border-radius: 15px;
@@ -11,9 +37,12 @@
     background-color: #121326;
     transition: 0.3s;
   }
-}
 
-.button-centered {
-  align-self: center;
-  text-decoration: none;
+  &__button-centered {
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 }

@@ -1,3 +1,8 @@
+.aboutme-section__resume-button {
+  display: flex;
+  justify-content: center;
+}
+
 .education-section__list {
   display: flex;
   flex-wrap: wrap;
@@ -112,7 +117,32 @@ body {
   margin: 0px 5px;
 }
 
-.button {
+.nav-button {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .nav-button {
+    display: block;
+    border: none;
+    border-radius: 15px;
+    width: 164px;
+    height: 48px;
+    cursor: pointer;
+  }
+  .nav-button:hover {
+    color: white;
+    background-color: #121326;
+    transition: 0.3s;
+  }
+  .nav-button__button-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+}
+
+.aboutme-button {
   display: block;
   border: none;
   border-radius: 15px;
@@ -120,15 +150,18 @@ body {
   height: 48px;
   cursor: pointer;
 }
-.button:hover {
+.aboutme-button:hover {
   color: white;
   background-color: #121326;
   transition: 0.3s;
 }
-
-.button-centered {
-  align-self: center;
+.aboutme-button__button-centered {
   text-decoration: none;
+}
+@media screen and (min-width: 1024px) {
+  .aboutme-button {
+    display: none;
+  }
 }
 
 .hero-section {
@@ -252,11 +285,7 @@ body {
     display: block;
   }
   .navigation__stickynav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     padding: 5px 10px;
-    gap: 10px;
     background-color: steelblue;
   }
   .navigation__aside-links {
@@ -276,6 +305,7 @@ body {
     border-right: 5px solid #121326;
   }
   .navigation__stickynav {
+    display: flex;
     position: sticky;
     padding: 0;
     justify-content: center;
