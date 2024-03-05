@@ -1,3 +1,24 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2");
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2");
+}
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-weight: 900;
+  src: url("../fonts/roboto-v30-latin-900.woff2") format("woff2");
+}
 :root {
   --color-main-dark: #121326;
   --color-main-light: #ffffff;
@@ -20,7 +41,12 @@ p {
 
 body {
   margin: 0px;
-  color: #121326;
+  color: var(--color-main-dark);
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 10px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
 }
 
 .wholepage {
@@ -34,6 +60,14 @@ body {
 
 .content {
   overflow: hidden;
+  margin: 0px 5px;
+}
+
+.article-title {
+  font-size: 20px;
+  margin: 0px;
+  font-family: "Roboto", serif;
+  font-weight: 700;
 }
 
 .section-title {
@@ -41,16 +75,8 @@ body {
   margin: 0px;
   padding: 10px 0px;
   text-align: center;
-}
-
-.text {
-  font-size: 20px;
-  margin: 0;
-  padding: 10px 10px;
-}
-
-.content {
-  margin: 0px 5px;
+  font-family: "Roboto", serif;
+  font-weight: 900;
 }
 
 .nav-button {
