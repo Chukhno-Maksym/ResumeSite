@@ -17,7 +17,6 @@ body {
   margin: 0px;
   color: var(--color-main-dark);
   font-size: 18px;
-  margin: 0;
   font-family: "Roboto", serif;
   font-weight: 400;
 }
@@ -36,17 +35,25 @@ body {
 }
 
 .article-title {
-  font-size: 20px;
+  font-size: 18px;
   margin: 0px;
   font-family: "Roboto", serif;
   font-weight: 700;
+
+  @media screen and (min-width: $bp-laptop) {
+    font-size: 20px;
+  }
 }
 
 .section-title {
-  font-size: 64px;
+  font-size: 48px;
   margin: 0px;
   padding: 10px 0px;
   text-align: center;
   font-family: "Roboto", serif;
   font-weight: 900;
+
+  @media screen and (min-width: $bp-laptop) {
+    font-size: 64px;
+  }
 }
