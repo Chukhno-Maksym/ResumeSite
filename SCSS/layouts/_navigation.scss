@@ -1,12 +1,12 @@
 .navigation {
   display: none;
 
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: $bp-tablet) {
     display: block;
 
     &__stickynav {
       padding: 5px 10px;
-      background-color: #121326;
+      background-color: var(--color-main-dark);
     }
 
     &__aside-links {
@@ -20,17 +20,17 @@
     }
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $bp-laptop) {
     width: 100%;
     max-width: 310px;
-    border-right: 5px solid #121326;
+    border-right: 5px solid var(--color-main-dark);
 
     &__stickynav {
       display: flex;
       position: sticky;
       padding: 0;
       justify-content: center;
-      background-color: white;
+      background-color: var(--color-main-light);
       flex-direction: column;
       top: 0;
     }

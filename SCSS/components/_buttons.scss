@@ -1,76 +1,19 @@
 .nav-button {
   display: none;
 
-  @media screen and (min-width: 1024px) {
-    display: block;
-    border: none;
-    border-radius: 25px;
-    width: 280px;
-    height: 60px;
-    font-size: 26px;
-    cursor: pointer;
-    margin: 0 auto;
-
-    &__button-deco {
-      text-decoration: none;
-      color: inherit;
-      font-family: "Times New Roman", sans-serif;
-    }
-
-    &:hover {
-      color: white;
-      background-color: #121326;
-      transition: 0.3s;
-    }
+  @media screen and (min-width: $bp-laptop) {
+    @include button-stile;
   }
 }
 
 .aboutme-button {
-  display: block;
-  border: none;
-  border-radius: 15px;
-  width: 280px;
-  height: 60px;
-  font-size: 26px;
-  cursor: pointer;
-  margin: 0 auto;
+  @include button-stile;
 
-  &:hover {
-    color: white;
-    background-color: #121326;
-    transition: 0.3s;
-  }
-
-  &__button-deco {
-    text-decoration: none;
-    color: inherit;
-    font-family: "Times New Roman", sans-serif;
-  }
-
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $bp-laptop) {
     display: none;
   }
 }
 
 .mobile-button {
-  display: block;
-  border: none;
-  border-radius: 15px;
-  width: 280px;
-  height: 60px;
-  font-size: 26px;
-  cursor: pointer;
-  margin: 0 auto;
-
-  &:hover {
-    color: white;
-    background-color: #121326;
-    transition: 0.3s;
-  }
-
-  &__button-deco {
-    text-decoration: none;
-    color: inherit;
-    font-family: "Times New Roman", sans-serif;
-  }
+  @include button-stile;
 }

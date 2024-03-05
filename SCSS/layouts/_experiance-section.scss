@@ -11,7 +11,7 @@
   }
   &__positions {
     padding: 5px 5px;
-    border: 2px solid black;
+    border: 2px solid var(--color-main-dark);
     border-radius: 25px;
   }
 
@@ -23,7 +23,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $bp-laptop) {
     &__button {
       display: block;
       cursor: pointer;

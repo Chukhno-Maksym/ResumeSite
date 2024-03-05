@@ -14,9 +14,9 @@
     width: 95%;
     max-width: 500px;
     padding: 5px;
-    border: 2px solid #121326;
+    border: 2px solid var(--color-main-dark);
     border-radius: 25px;
-    box-shadow: 5px 5px #121326;
+    box-shadow: 5px 5px var(--color-main-dark);
   }
   &__grade {
     display: flex;
@@ -25,7 +25,7 @@
     gap: 5px;
   }
 
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: $bp-tablet) {
     &__list {
       flex-direction: row;
       flex-wrap: nowrap;

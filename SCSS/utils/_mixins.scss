@@ -1,0 +1,22 @@
+@mixin button-stile {
+  display: block;
+  border: none;
+  border-radius: 25px;
+  width: 280px;
+  height: 60px;
+  font-size: 26px;
+  cursor: pointer;
+  margin: 0 auto;
+
+  &:hover {
+    color: var(--color-main-light);
+    background-color: var(--color-main-dark);
+    transition: 0.3s;
+  }
+
+  &__button-deco {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Times New Roman", sans-serif;
+  }
+}

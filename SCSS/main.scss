@@ -1,4 +1,10 @@
+@import "./utils/variables";
+@import "./utils/mixins";
 @import "./base";
+
+@import "./components/buttons";
+@import "./components/link";
+@import "./components/pagination";
 
 @import "./layouts/aboutme-section";
 @import "./layouts/contacts-section";
@@ -8,7 +14,3 @@
 @import "./layouts/mobile-menu";
 @import "./layouts/navigation";
 @import "./layouts/skills-section";
-
-@import "./components/buttons";
-@import "./components/link";
-@import "./components/pagination";

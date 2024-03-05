@@ -3,26 +3,25 @@
   padding: 5px;
   text-decoration: none;
   border-radius: 25px;
-  color: #121326;
+  color: var(--color-main-dark);
 
-  @media screen and (min-width: 720px) {
+  @media screen and (min-width: $bp-tablet) {
     font-size: 18px;
-    color: white;
+    color: var(--color-main-light);
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $bp-laptop) {
     font-size: 30px;
-    color: #121326;
+    color: var(--color-main-dark);
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: $bp-desktop) {
     font-size: 34px;
-    color: #121326;
   }
 
   &:hover {
-    color: white;
-    background-color: #121326;
+    color: var(--color-main-light);
+    background-color: var(--color-main-dark);
     transition: 0.3s;
   }
 }
